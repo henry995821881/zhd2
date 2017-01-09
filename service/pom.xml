@@ -13,12 +13,8 @@
 
 
 	<dependencies>
-		<!-- common -->
-		<dependency>
-			<groupId>org.henry</groupId>
-			<artifactId>common</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
+
+
 		<!-- API -->
 		<dependency>
 			<groupId>org.henry</groupId>

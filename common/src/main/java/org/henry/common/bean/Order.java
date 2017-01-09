@@ -22,5 +22,11 @@ public class Order implements Serializable {
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+	@Override
+	public String toString() {
+		return "Order [orderNo=" + orderNo + ", desc=" + desc + "]";
+	}
+	
+	
 
 }

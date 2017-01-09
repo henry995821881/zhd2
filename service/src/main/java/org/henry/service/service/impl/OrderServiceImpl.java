@@ -2,7 +2,8 @@ package org.henry.service.service.impl;
 
 import org.henry.API.service.OrderService;
 import org.henry.common.bean.Order;
-
+import org.springframework.stereotype.Service;
+@Service
 public class OrderServiceImpl implements OrderService {
 
 	public Order getOrderNo() {

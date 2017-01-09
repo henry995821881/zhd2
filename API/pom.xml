@@ -3,4 +3,13 @@
   <groupId>org.henry</groupId>
   <artifactId>API</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  
+  <dependencies>
+	<!-- common -->
+		<dependency>
+			<groupId>org.henry</groupId>
+			<artifactId>common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+  </dependencies>
 </project>
