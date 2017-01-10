@@ -17,7 +17,16 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>Hlog</servlet-name>
-    <url-pattern>/Hlog</url-pattern>
-    <url-pattern>/</url-pattern>
+    <url-pattern>/roottrade</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CLog</display-name>
+    <servlet-name>CLog</servlet-name>
+    <servlet-class>org.henry.logger.CLog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CLog</servlet-name>
+    <url-pattern>/catalina</url-pattern>
   </servlet-mapping>
 </web-app>

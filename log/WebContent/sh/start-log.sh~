@@ -4,7 +4,7 @@ roottrade_path=$1
 catalina_path=$2
 WHILE_PID_FILE="while.pid"
 
-nohup ./while.sh $roottrade_path $catalina_path >/dev/null 2>&1 &
+nohup ./while.sh $path >/dev/null 2>&1 &
 
 if [ -f "$WHILE_PID_FILE" ];then
 

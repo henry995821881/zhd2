@@ -1,9 +1,7 @@
 package org.henry.logger;
 
-
 import java.io.File;
 import java.io.FileInputStream;
-
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -13,15 +11,15 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class Hlog
+ * Servlet implementation class CLog
  */
-public class Hlog extends HttpServlet {
+public class CLog extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public Hlog() {
+    public CLog() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -30,10 +28,12 @@ public class Hlog extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		
+		
+		
 		String msg ="";
 		String realPath = request.getServletContext().getRealPath("/");
-		File file = new File(realPath+"/sh/roottrade.log");
+		File file = new File(realPath+"/sh/catalina.log");
 		if(file.exists()){
 			
 		
@@ -63,6 +63,10 @@ public class Hlog extends HttpServlet {
 		
 		
 		writer.println(msg);
+		
+		
+		
+		
 		
 		
 	}
